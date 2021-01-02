@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=<YOURANALYTICSIDHERE>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<YOURANALYTICSIDHERE>');
+    </script> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Santhosh Srinivasan">
+    <meta name="description" content="A crashcourse in Python">
+
+    <title>RevealJS Template</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown="slides.md"
+                 data-separator-vertical="^\r?\n\r?\n\r?\n"
+                 data-separator-notes="^Notes?:">
+        </section>
+        <section>
+          <section data-markdown>
+            ## 😇 Thank you! 🙏
+            Stay Home 🏡
+            Stay Safe 🧼
+          </section>
+          <section>
+            <h2>Themes</h2>
+            <!-- Hacks to swap themes after the page has loaded. Not flexible -->
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black (default)</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">League</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/sky.css'); return false;">Sky</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/beige.css'); return false;">Beige</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a> <br>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/serif.css'); return false;">Serif</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/blood.css'); return false;">Blood</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/night.css'); return false;">Night</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/moon.css'); return false;">Moon</a> -
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/solarized.css'); return false;">Solarized</a>
+          </section>
+          <section id="settings" data-markdown>
+            ## Transition Styles
+  
+            [None](?transition=none#/settings) -
+            [Fade](?transition=fade#/settings) -
+            [Slide](?transition=slide#/settings) -
+            [Convex](?transition=convex#/settings) -
+            [Concave](?transition=concave#/settings) -
+            [Zoom](?transition=zoom#/settings)
+          </section>
+        </section>        
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                hash: true,
+                slideNumber: "c/t",
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ 
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealZoom,
+                    RevealSearch,
+                ]
+			});
+		</script>
+	</body>
+</html>
